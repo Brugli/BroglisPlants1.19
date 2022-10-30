@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["old_growth_pine_taiga","old_growth_spruce_taiga"],
+  "features": "broglisplants:corpse_flower_placed",
+  "step": "vegetal_decoration"
+}

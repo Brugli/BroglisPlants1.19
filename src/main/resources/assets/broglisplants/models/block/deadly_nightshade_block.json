@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "broglisplants:block/deadly_nightshade_block"
+  },
+  "render_type": "cutout"
+}

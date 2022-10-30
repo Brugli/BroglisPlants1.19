@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "particle": "minecraft:block/weeping_vines",
+    "layer0": "broglisplants:item/item_corpse_flower_seeds"
+  }
+}

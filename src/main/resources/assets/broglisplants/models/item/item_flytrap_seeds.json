@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "particle": "minecraft:block/seagrass",
+    "layer0": "broglisplants:item/item_flytrap_seeds"
+  }
+}

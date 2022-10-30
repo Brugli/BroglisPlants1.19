@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "mangrove_swamp",
+  "features": "broglisplants:flytrap_placed",
+  "step": "vegetal_decoration"
+}
