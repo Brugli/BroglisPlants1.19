@@ -14,7 +14,6 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class EntityFlytrap extends BlockEntity implements IAnimatable {
-
     private final AnimationFactory factory = new AnimationFactory(this);
 
     public int seedsDropped = 0;

@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 
 public class ItemCorpseFlowerSeeds extends BlockItem {
+
     public ItemCorpseFlowerSeeds(Block block, Properties properties) {
         super(block, properties);
     }

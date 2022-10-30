@@ -24,7 +24,6 @@ public class ModEventClientBusEvents {
     public static void clientSetup(final FMLClientSetupEvent event) {
 
     }
-
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(BroglisPlantsBlockEntities.ENTITY_FLYTRAP.get(), FlytrapRenderer::new);

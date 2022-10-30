@@ -1,7 +1,6 @@
 package net.brogli.broglisplants.block.entity;
 
 import net.brogli.broglisplants.block.BroglisPlantsBlockEntities;
-import net.brogli.broglisplants.block.custom.FlytrapBlock;
 import net.brogli.broglisplants.block.custom.PottedFlytrapBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;

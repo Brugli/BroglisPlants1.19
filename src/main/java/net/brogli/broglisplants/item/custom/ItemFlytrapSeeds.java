@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 
 public class ItemFlytrapSeeds extends BlockItem {
+
     public ItemFlytrapSeeds(Block block, Item.Properties properties) {
         super(block, properties);
     }

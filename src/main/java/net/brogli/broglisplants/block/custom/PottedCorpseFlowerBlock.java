@@ -26,7 +26,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import javax.annotation.Nullable;
 
 public class PottedCorpseFlowerBlock extends CorpseFlowerBlock {
-
     protected static final VoxelShape SHAPE = Block.box(5.0D, 0.0D, 5.0D, 11.0D, 6.0D, 11.0D);
 
     public PottedCorpseFlowerBlock(BlockBehaviour.Properties properties) {

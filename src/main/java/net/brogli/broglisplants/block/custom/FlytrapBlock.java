@@ -39,17 +39,11 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class FlytrapBlock extends BaseEntityBlock implements BonemealableBlock {
-
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
-
     protected static final VoxelShape AABB = Block.box(1.0D, 0.0D, 1.0D, 15.0D, 3.0D, 15.0D);
-
     protected static final AABB TOUCH_AABB = new AABB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
-
     private final FlytrapBlock.Sensitivity sensitivity;
-
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-
 
     public FlytrapBlock(FlytrapBlock.Sensitivity sensitivity, BlockBehaviour.Properties properties) {
         super(properties);

@@ -3,7 +3,6 @@ package net.brogli.broglisplants.block.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.brogli.broglisplants.block.entity.PottedEntityCorpseFlower;
-import net.brogli.broglisplants.block.entity.PottedEntityFlytrap;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

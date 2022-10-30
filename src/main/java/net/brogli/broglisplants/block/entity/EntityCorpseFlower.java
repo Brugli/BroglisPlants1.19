@@ -13,7 +13,6 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class EntityCorpseFlower extends BlockEntity implements IAnimatable {
-
     private final AnimationFactory factory = new AnimationFactory(this);
 
     public int seedsDropped = 0;

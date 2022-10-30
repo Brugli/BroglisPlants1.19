@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.renderers.geo.GeoBlockRenderer;
 
 public class CorpseFlowerRenderer extends GeoBlockRenderer<EntityCorpseFlower> {
+
     public CorpseFlowerRenderer(BlockEntityRendererProvider.Context rendererDispatcherIn) {
         super(rendererDispatcherIn, new CorpseFlowerModel());
     }

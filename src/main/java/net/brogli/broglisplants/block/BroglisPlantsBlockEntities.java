@@ -12,6 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class BroglisPlantsBlockEntities {
+
     public static final DeferredRegister<BlockEntityType<?>> BROGLIS_PLANTS_BLOCK_ENTITY_TYPES = DeferredRegister
             .create(ForgeRegistries.BLOCK_ENTITY_TYPES, BroglisPlants.MOD_ID);
 

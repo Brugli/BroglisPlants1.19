@@ -9,13 +9,12 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.MudBlock;
 import net.minecraft.world.level.block.MyceliumBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class DeadlyNightshadeBlock extends FlowerBlock {
+
     public DeadlyNightshadeBlock(MobEffect effect, int i, Properties properties) {
         super(effect, i, properties);
     }

@@ -2,7 +2,6 @@ package net.brogli.broglisplants.block.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.brogli.broglisplants.block.entity.EntityFlytrap;
 import net.brogli.broglisplants.block.entity.PottedEntityFlytrap;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -11,6 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.renderers.geo.GeoBlockRenderer;
 
 public class PottedFlytrapRenderer extends GeoBlockRenderer<PottedEntityFlytrap> {
+
     public PottedFlytrapRenderer(BlockEntityRendererProvider.Context rendererDispatcherIn) {
         super(rendererDispatcherIn, new PottedFlytrapModel());
     }

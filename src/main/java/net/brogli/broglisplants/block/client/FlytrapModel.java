@@ -7,17 +7,11 @@ import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class FlytrapModel extends AnimatedGeoModel<EntityFlytrap> {
-
     public static final ResourceLocation AGE_0 = new ResourceLocation(BroglisPlants.MOD_ID, "geo/entity_flytrap_small.geo.json");
-
     public static final ResourceLocation AGE_1 = new ResourceLocation(BroglisPlants.MOD_ID, "geo/entity_flytrap.geo.json");
-
     public static final ResourceLocation AGE_2 = new ResourceLocation(BroglisPlants.MOD_ID, "geo/entity_flytrap_flowering.geo.json");
-
     public static final ResourceLocation SMALL_ANIM = new ResourceLocation(BroglisPlants.MOD_ID, "animations/entity_flytrap_small.animation.json");
-
     public static final ResourceLocation ANIM = new ResourceLocation(BroglisPlants.MOD_ID, "animations/entity_flytrap.animation.json");
-
     public static final ResourceLocation FLOWERING_ANIM = new ResourceLocation(BroglisPlants.MOD_ID, "animations/entity_flytrap_flowering.animation.json");
 
     @Override

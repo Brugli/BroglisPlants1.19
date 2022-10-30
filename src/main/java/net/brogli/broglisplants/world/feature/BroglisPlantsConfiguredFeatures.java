@@ -4,8 +4,6 @@ import net.brogli.broglisplants.BroglisPlants;
 import net.brogli.broglisplants.block.BroglisPlantsBlocks;
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;

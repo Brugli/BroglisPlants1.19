@@ -7,8 +7,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class CorpseFlowerParticles extends TextureSheetParticle {
-
     private final SpriteSet sprites;
+
     CorpseFlowerParticles(ClientLevel level, double a, double b, double c, double d, double e, double f, SpriteSet spriteSet) {
         super(level, a, b, c, d, e, f);
 
@@ -25,7 +25,6 @@ public class CorpseFlowerParticles extends TextureSheetParticle {
         super.tick();
         this.setSpriteFromAge(this.sprites);
     }
-
 
     @Override
     public ParticleRenderType getRenderType() {

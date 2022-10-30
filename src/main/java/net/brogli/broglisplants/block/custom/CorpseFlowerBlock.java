@@ -2,21 +2,17 @@ package net.brogli.broglisplants.block.custom;
 
 import net.brogli.broglisplants.block.BroglisPlantsBlockEntities;
 import net.brogli.broglisplants.block.entity.EntityCorpseFlower;
-import net.brogli.broglisplants.block.entity.EntityFlytrap;
 import net.brogli.broglisplants.item.BroglisPlantsItems;
 import net.brogli.broglisplants.particle.BroglisPlantsParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -33,23 +29,14 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
-
 public class CorpseFlowerBlock extends BaseEntityBlock implements BonemealableBlock {
-
     public static final IntegerProperty AGE = BlockStateProperties.AGE_2;
-
     protected static final VoxelShape AABB = Block.box(1.0D, 0.0D, 1.0D, 15.0D, 4.0D, 15.0D);
-
-
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
     public CorpseFlowerBlock(BlockBehaviour.Properties properties) {
@@ -111,7 +98,6 @@ public class CorpseFlowerBlock extends BaseEntityBlock implements BonemealableBl
 
     public boolean isRandomlyTicking(BlockState state) {
         return state.getValue(AGE) != 2;
-//        return !this.isMaxAge(state);
     }
 
     protected int getBonemealAgeIncrease() {
