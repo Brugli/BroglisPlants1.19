@@ -1,2 +1,2 @@
-Broglis Plants 1.19 - 0.0.2
+Broglis Plants 1.19 - 0.0.3
 
