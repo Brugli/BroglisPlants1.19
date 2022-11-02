@@ -126,7 +126,7 @@ public class FlytrapBlock extends BaseEntityBlock implements BonemealableBlock {
         if (!list.isEmpty()) {
             for(Entity entity : list) {
                 if (!entity.isIgnoringBlockTriggers()) {
-                    level.playSound(null, pos, SoundEvents.FROG_EAT, SoundSource.BLOCKS, 0.4f, 0.75f);
+//                    level.playSound(null, pos, SoundEvents.FROG_EAT, SoundSource.BLOCKS, 0.4f, 0.75f);
                     if (level.random.nextFloat() > 0.75F) {
                         level.addParticle(ParticleTypes.SPORE_BLOSSOM_AIR, pos.getX() + (level.random.nextFloat()), pos.getY() + 0.3D, pos.getZ() + (level.random.nextFloat()), 0.0D, 0.0D, 0.0D);
                     }
