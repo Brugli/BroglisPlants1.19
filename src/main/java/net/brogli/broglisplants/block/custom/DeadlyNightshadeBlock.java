@@ -37,6 +37,6 @@ public class DeadlyNightshadeBlock extends FlowerBlock {
     }
 
     protected boolean mayPlaceOn(BlockState p_51042_, BlockGetter p_51043_, BlockPos p_51044_) {
-        return p_51042_.is(BlockTags.DIRT) || p_51042_.getBlock() instanceof MyceliumBlock;
+        return p_51042_.is(BlockTags.DIRT);
     }
 }
