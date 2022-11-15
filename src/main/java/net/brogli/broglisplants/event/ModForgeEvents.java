@@ -2,33 +2,38 @@ package net.brogli.broglisplants.event;
 
 import net.brogli.broglisplants.BroglisPlants;
 import net.brogli.broglisplants.block.BroglisPlantsBlocks;
+import net.brogli.broglisplants.block.custom.GiantLilyBudBlock;
 import net.brogli.broglisplants.particle.BroglisPlantsParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.event.level.BlockEvent;
+import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = BroglisPlants.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModForgeEvents {
 
-//    @SubscribeEvent
-//    public static void blockParticleEvent(final BlockEvent event) {
-//
-//        Block block = event.getState().getBlock();
-//        BlockPos pos = event.getPos();
-//        Level level = (Level) event.getLevel();
-//        if (block == BroglisPlantsBlocks.POTTED_DEADLY_NIGHTSHADE.get()) {
-//            block.tick(block.defaultBlockState(), (ServerLevel) event.getLevel(), pos, level.random);
-//            if (level.random.nextFloat() > 0.85) {
-//                double d1 = level.random.nextDouble() * (0.2 - 0.1) + 0.1;
-//                level.addParticle(BroglisPlantsParticles.DEADLY_NIGHTSHADE_PARTICLES.get(), (pos.getX() + 0.35) + d1, pos.getY() + 0.9D, (pos.getZ() + 0.35) + d1, 0.0D, 0.02D, 0.0D);
-//            }
-//        }
-//    }
+    @SubscribeEvent
+    public static void blockBreakEvent(final BlockEvent.BreakEvent event) {
+        BlockPos pos = event.getPos();
+        BlockState state = event.getLevel().getBlockState(pos);
+        BlockState belowState = event.getLevel().getBlockState(pos.below());
+        Material material = belowState.getMaterial();
 
+        if ((state.is(BroglisPlantsBlocks.GIANT_LILY_BUD.get()) || state.is(BroglisPlantsBlocks.GIANT_LILY_SMALL.get()) || state.is(BroglisPlantsBlocks.GIANT_LILY_PAD_CENTER.get()))  && !material.isSolid()) {
+            event.getLevel().setBlock(pos.below(), BroglisPlantsBlocks.GIANT_LILY_BUD.get().defaultBlockState().setValue(GiantLilyBudBlock.WATERLOGGED, true), 2);
+        }
+        if (state.is(BroglisPlantsBlocks.GIANT_LILY_STEM.get())) {
+            event.setCanceled(!material.isSolid());
+            event.getLevel().setBlock(event.getPos(), BroglisPlantsBlocks.GIANT_LILY_BUD.get().defaultBlockState().setValue(GiantLilyBudBlock.WATERLOGGED, true), 2);
+        }
+    }
 
 //    @SubscribeEvent
 //    public static void SeedPlantEvent(final ItemExpireEvent event) {
